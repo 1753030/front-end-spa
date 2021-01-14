@@ -1,44 +1,49 @@
-import React, {useState} from 'react'; 
-import LoginForm from './components/LoginForm';
-function App() {
-  const  adminUser = {
-    email: "admin@admin.com",
-    password : "admin123"
-  }
+import React from 'react';
+import { HashRouter, Switch, Route } from 'react-router-dom';
+import Login from './pages/Login';
+import ForgotPassword from './pages/ForgotPassword';
+import SignUp from './pages/SignUp';
+import RePassword from './pages/RenewPassword';
+import Detail from './pages/detail';
+import Home from './pages/home';
+import SearchPage from './pages/Search';
+import ProfilePage from './pages/Profile';
+import ShoppingCartPage from './pages/ShoppingCartPage'
 
-  const [user, setUser] = useState({name: "", email: ""});
-  const [error, setError] = useState("");
-
-  const Login = details => {
-    console.log(details);
-
-    if (details.email == adminUser.email && details.password == adminUser.password){
-    console.log("Logged in");
-    setUser({
-      name: details.name,
-      email: details.email
-    });
-    } else {
-      console.log("Details do not match!");
-      setError("Details do not match!");
-    }
-  };
-
-  const Logout = () => {
-    setUser({ name: "", email: ""});
-  }
-  return (
-    <div className="App">
-      {(user.email != "") ? (
-        <div className= "Welcome">
-          <h2>Welcome,  <span> {user.name}</span></h2>
-          <button onClick={Logout}>Logout</button>
-          </div>
-      ) : (
-        <LoginForm Login={Login} error={error} />
-      )}
-    </div>
-  );
+const App = (props) => {
+    return (
+        <HashRouter>
+            <Switch>
+                <Route exact path='/signup'
+                    component={SignUp}
+                />
+                  <Route exact path='/profile'
+                    component={ProfilePage}
+                />
+                 <Route exact path='/shoppingcart'
+                    component={ShoppingCartPage}
+                />
+                 <Route exact path='/search'
+                    component={SearchPage}
+                />
+                <Route exact path='/forgotpassword'
+                    component={ForgotPassword}
+                />
+                <Route exact path='/renewpassword'
+                    component={RePassword}
+                />
+                <Route path='/detail/:id'
+                    component={Detail}
+                />
+                <Route exact path='/login'
+                    component={Login}
+                />
+                <Route exact path='/'>
+                    <Home />
+                </Route>
+            </Switch>
+        </HashRouter>
+    );
 }
 
 export default App;

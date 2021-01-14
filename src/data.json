@@ -1,0 +1,144 @@
+[
+    {
+        "chaptersId": [
+            {
+                "_id": "5ff8983f84d6e910c9de7b37",
+                "title": "Gái nhật đó",
+                "description": "Bài học về samurai",
+                "ytbUrl": "https://www.youtube.com/watch?v=itJVNnZ94TU&ab_channel=MinhCh%C3%A2uVlog",
+                "published_at": "2021-01-08T17:37:04.972Z",
+                "createdAt": "2021-01-08T17:37:03.617Z",
+                "updatedAt": "2021-01-08T17:37:04.978Z",
+                "__v": 0,
+                "id": "5ff8983f84d6e910c9de7b37"
+            }
+        ],
+        "categories": [
+            {
+                "categories": [
+                    "5ff89a319e2980112062efa2",
+                    "5ff89a4b9e2980112062efa3"
+                ],
+                "_id": "5ff89a269e2980112062efa1",
+                "Title": "IT",
+                "level": 1,
+                "published_at": "2021-01-08T17:45:12.499Z",
+                "createdAt": "2021-01-08T17:45:10.746Z",
+                "updatedAt": "2021-01-08T17:45:59.314Z",
+                "__v": 0,
+                "id": "5ff89a269e2980112062efa1"
+            },
+            {
+                "categories": [],
+                "_id": "5ff89a4b9e2980112062efa3",
+                "Title": "Lập trình di động",
+                "level": 2,
+                "published_at": "2021-01-08T17:46:04.944Z",
+                "createdAt": "2021-01-08T17:45:47.137Z",
+                "updatedAt": "2021-01-08T17:46:04.952Z",
+                "__v": 0,
+                "id": "5ff89a4b9e2980112062efa3"
+            }
+        ],
+        "_id": "5ff8d7179ef87326c41b7cdb",
+        "discount": 0,
+        "detailDes": "Mô tả chi tiết.",
+        "numSeen": "12",
+        "numRate": 2,
+        "numChapter": 8,
+        "numRegister": 4,
+        "price": 200000,
+        "isDone": true,
+        "briefDes": "Mô tả ngắn gọn.",
+        "title": "Học làm ninja",
+        "rating": 4.2,
+        "published_at": "2021-01-08T22:05:13.846Z",
+        "createdAt": "2021-01-08T22:05:11.838Z",
+        "updatedAt": "2021-01-08T22:34:40.985Z",
+        "__v": 0,
+        "avatar": {
+            "_id": "5ff8cb3fd3b3d824db94176c",
+            "name": "chau-tinh-tri-than-bai.jpg",
+            "alternativeText": "",
+            "caption": "",
+            "hash": "chau_tinh_tri_than_bai_e040e80f05",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 94.5,
+            "width": 1727,
+            "height": 970,
+            "url": "/uploads/chau_tinh_tri_than_bai_e040e80f05.jpg",
+            "formats": {
+                "thumbnail": {
+                    "name": "thumbnail_chau-tinh-tri-than-bai.jpg",
+                    "hash": "thumbnail_chau_tinh_tri_than_bai_e040e80f05",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "width": 245,
+                    "height": 138,
+                    "size": 7.26,
+                    "path": null,
+                    "url": "/uploads/thumbnail_chau_tinh_tri_than_bai_e040e80f05.jpg"
+                },
+                "large": {
+                    "name": "large_chau-tinh-tri-than-bai.jpg",
+                    "hash": "large_chau_tinh_tri_than_bai_e040e80f05",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "width": 1000,
+                    "height": 562,
+                    "size": 49.6,
+                    "path": null,
+                    "url": "/uploads/large_chau_tinh_tri_than_bai_e040e80f05.jpg"
+                },
+                "medium": {
+                    "name": "medium_chau-tinh-tri-than-bai.jpg",
+                    "hash": "medium_chau_tinh_tri_than_bai_e040e80f05",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "width": 750,
+                    "height": 421,
+                    "size": 32.54,
+                    "path": null,
+                    "url": "/uploads/medium_chau_tinh_tri_than_bai_e040e80f05.jpg"
+                },
+                "small": {
+                    "name": "small_chau-tinh-tri-than-bai.jpg",
+                    "hash": "small_chau_tinh_tri_than_bai_e040e80f05",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "width": 500,
+                    "height": 281,
+                    "size": 19.02,
+                    "path": null,
+                    "url": "/uploads/small_chau_tinh_tri_than_bai_e040e80f05.jpg"
+                }
+            },
+            "provider": "local",
+            "related": [
+                "5ff8a098e180c311b140cc17",
+                "5ff89b509e2980112062efa6",
+                "5ff8d7179ef87326c41b7cdb"
+            ],
+            "createdAt": "2021-01-08T21:14:39.343Z",
+            "updatedAt": "2021-01-10T10:57:33.198Z",
+            "__v": 0,
+            "id": "5ff8cb3fd3b3d824db94176c"
+        },
+        "instructorId": {
+            "confirmed": true,
+            "blocked": false,
+            "_id": "5ff8de002d16ea2942bd1819",
+            "username": "gv2",
+            "email": "gv2@gmail.com",
+            "name": "gv2",
+            "provider": "local",
+            "createdAt": "2021-01-08T22:34:40.972Z",
+            "updatedAt": "2021-01-08T22:34:40.986Z",
+            "__v": 0,
+            "role": "5ff1eeaab5f8b3473a143a97",
+            "id": "5ff8de002d16ea2942bd1819"
+        },
+        "id": "5ff8d7179ef87326c41b7cdb"
+    }
+]
