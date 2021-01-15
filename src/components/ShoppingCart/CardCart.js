@@ -13,17 +13,15 @@ export default class CardCart extends React.Component {
     return (
       <div
         style={{
-            border: '2px solid red',
-            width: 690,
-            height: 170,
           margin: "20px",
+          
         }}
       >
-        <Card border="primary" style={{background:"orange", width: "15rem", height: 150, flexDirection: 'row' }}>
+        <Card border="primary" style={{ height: 170 , width: 900, flexDirection: 'row',  }}>
           <a href="/detail">
             {" "}
             <Card.Img
-              style = {{height: 170, width: 280}}
+              style = {{height: 168, width: 280, padding: 5}}
               variant="top"
               src="https://img-a.udemycdn.com/course/240x135/1917546_682b_3.jpg?Zo3-EFJGU-SX6Li0eFavaKwR2z5w7rv7W0-O-YQNe7vIqWuoAWG4p0n5qRecioEROaVP0UKeDzEN7RqJT_G2nclaKhFtLq7b0KPaZOBdjceoEkEYYc8xn7KbkMw3rsQ8"
             ></Card.Img>
@@ -31,7 +29,7 @@ export default class CardCart extends React.Component {
           <Card.Body
             
           >
-            <Card.Title style = {{ width: 240}} >{this.props.courseName}</Card.Title>
+            <Card.Title style = {{ width: 440}} >{this.props.courseName}</Card.Title>
             <Card.Text style={{ fontSize: 12, marginBottom: 5 }}>
               {this.props.teacher}
             </Card.Text>
@@ -64,7 +62,9 @@ export default class CardCart extends React.Component {
             </h6>
           </Card.Body>
           <Card.Footer>
-            <Button>Remove</Button> <Button>Wishlist</Button>
+            <Button>Remove</Button>
+            
+            {/* <Button>Wishlist</Button> */}
           </Card.Footer>
         </Card>
       </div>

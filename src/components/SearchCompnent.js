@@ -20,6 +20,7 @@ export default function SearchComponent(props) {
           );
         })}
       </div>
+      <div style= {{height:40}}></div>
       <StickyFooter />
     </div>
   );

@@ -64,11 +64,12 @@ const CardComponent = (props) => {
             {props.price} VNĐ
             </h6>
         </Card.Body>
-        <Card.Footer>
+        <Card.Footer style = {{justifyContent: "center",
+              display: "flex",}}>
           <button
             style={{
               background: "#f05454",
-              width: 95,
+              width: 200,
               color: "white",
               padding: "5px",
               textAlign: "center",
