@@ -15,7 +15,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
-import Home from "./home";
+import Home from "./Home";
 
 function Copyright() {
   return (

@@ -5,10 +5,24 @@ import { FaStar } from "react-icons/fa";
 import { useHistory } from "react-router-dom";
 
 const CardComponent = (props) => {
+  
   const history = useHistory();
 
   const onClickFunction = () => {
     history.push(`/detail/${props.id}`)
+  }
+
+  const onAddToCardClick = () => {
+    let array = [];
+    array.push(props.id);
+
+    if (!localStorage.getItem("cart")) {
+      localStorage.setItem("cart", array);
+    }
+    else {
+      array.push(localStorage.getItem("cart"));
+      localStorage.setItem("cart", array);
+    }
   }
 
   return (
@@ -80,6 +94,7 @@ const CardComponent = (props) => {
               boxShadow:
                 "0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.1)",
             }}
+            onClick={onAddToCardClick}
           >
             Add to cart
             </button>{" "}

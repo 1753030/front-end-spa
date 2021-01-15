@@ -9,6 +9,8 @@ export default class CardCart extends React.Component {
   //     this.props.history.push('/');
   // }
 
+  console.log("cart")
+
   render() {
     return (
       <div
