@@ -42,7 +42,7 @@ const HeaderComponent = (props) => {
 
   return (
     <div className="App">
-      <Navbar bg="light" expand="lg">
+      <Navbar style= {{background: "#f05454"}}>
         <Navbar.Brand href="/">NB School</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -60,14 +60,14 @@ const HeaderComponent = (props) => {
             width: "30%"
           }}>
             <FormControl type="text" placeholder="Search" className="mr-sm-2" id="search" />
-            <Button variant="outline-success" onClick={onSearchClick}>Search</Button>
+            <Button variant="warning" onClick={onSearchClick}>Search</Button>
           </Form>
         </Navbar.Collapse>
-        <Link to="/shoppingcart"><Button variant="outline-success" style={{ marginRight: "20px" }}>  <FontAwesomeIcon icon={faShoppingCart} /></Button></Link>
-        {localStorage.getItem("user") ? <Link to="/profile" > <Button variant="outline-success" style={{ marginRight: "20px" }}>{localStorage.getItem("user")}</Button></Link> : <h5></h5>}
-        {localStorage.getItem("user") ? <Button variant="outline-success" style={{ marginRight: "20px" }} onClick={onClickFunction}>Sign out</Button> : <h5></h5>}
-        {localStorage.getItem("user") ? <h1></h1> : <Link to="/login" > <Button variant="outline-success" style={{ marginRight: "20px" }}>Login</Button></Link>}
-        {localStorage.getItem("user") ? <h1></h1> : <Link to="/signup"><Button variant="outline-success" style={{ marginRight: "20px" }} >Sign up</Button></Link>}
+        <Link to="/shoppingcart"><Button variant="warning" style={{ marginRight: "20px" }}>  <FontAwesomeIcon icon={faShoppingCart} /></Button></Link>
+        {localStorage.getItem("user") ? <Link to="/profile" > <Button variant="warning" style={{ marginRight: "20px" }}>{localStorage.getItem("user")}</Button></Link> : <h5></h5>}
+        {localStorage.getItem("user") ? <Button variant="warning" style={{ marginRight: "20px" }} onClick={onClickFunction}>Sign out</Button> : <h5></h5>}
+        {localStorage.getItem("user") ? <h1></h1> : <Link to="/login" > <Button variant="warning" style={{ marginRight: "20px" }}>Login</Button></Link>}
+        {localStorage.getItem("user") ? <h1></h1> : <Link to="/signup"><Button variant="warning" style={{ marginRight: "20px" }} >Sign up</Button></Link>}
       </Navbar>
     </div >
   );

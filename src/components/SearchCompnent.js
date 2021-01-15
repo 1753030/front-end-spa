@@ -13,10 +13,14 @@ export default function SearchComponent(props) {
   return (
     <div>
       <div>
+        <div style= {{paddingTop: 10, paddingLeft: 10}}>
         <h4>{props.listSearch.length} kết quả</h4>
+        </div>
         {props.listSearch.map((item, index) => {
           return (
-            <CardSearch {...item} />
+            <div style = {{justifyContent : "center"}}>
+              <CardSearch {...item} />
+              </div>
           );
         })}
       </div>

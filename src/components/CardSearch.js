@@ -15,21 +15,21 @@ export default function CardSearch(props) {
   const history = useHistory();
 
   const onClickFunction = () => {
-    history.push(`/detail/${props.id}`)
-  }
+    history.push(`/detail/${props.id}`);
+  };
 
   return (
     <div>
       <div
         style={{
-          width: "100%",
-          borderTopWidth: 1,
-          borderTopStyle: "solid",
-          height: 10,
+          width: 900,
+          // borderTopWidth: 1,
+          // borderTopStyle: "solid",
+
           marginTop: 10,
         }}
       ></div>
-      <div style={{ width: "100%" }} onClick = {onClickFunction}>
+      <div style={{ width: "100%" }} onClick={onClickFunction}>
         <div
           style={{
             display: "flex",
@@ -41,14 +41,12 @@ export default function CardSearch(props) {
           <Card.Img
             variant="top"
             style={{ height: 160, width: 250 }}
-            src={'http://localhost:1337' + props.avatar.url}
+            src={"http://localhost:1337" + props.avatar.url}
           />
           <div style={{ width: 20 }}></div>
           <div style={{ width: "70%" }}>
             <div>
-              <h4>
-                {props.title}
-              </h4>
+              <h4>{props.title}</h4>
               <h4>Mô tả {props.briefDes}</h4>
               <div style={{ display: "flex" }}>
                 <h4>{props.rating}</h4>
@@ -65,7 +63,6 @@ export default function CardSearch(props) {
           <h4 style={{ width: 200 }}>{props.price} VNĐ</h4>
         </div>
       </div>
-
     </div>
   );
 }
